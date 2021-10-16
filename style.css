@@ -1,0 +1,138 @@
+/* style.css
+ */
+ .attribution { font-size: 11px; text-align: center; }
+ .attribution a { color: hsl(228, 45%, 44%); } 
+
+ * {
+     margin: 0;
+     padding: 0;
+    box-sizing: border-box;
+ }
+body{
+    /* fo; */
+    background-color: hsl(225, 100%, 94%);
+    font-family: 'Red Hat Display', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+button{
+    font-family: 'Red Hat Display', sans-serif;
+}
+.btn{
+    text-decoration: none;
+    border: none;
+    /* margin: ; */
+    padding: 10px;
+    border-radius: 10px;    
+    font-weight: bold;
+    font-size: 16px;
+    cursor:pointer;
+}
+.btn-change
+{
+    color: hsl(245, 75%, 52%);
+    background-color: transparent;
+    text-decoration: underline;
+}
+.btn-payment{
+    background-color:  hsl(245, 75%, 52%);
+    color: #fff;
+    padding: 10px;
+    /* height: 40px; */
+    width: 400px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    
+}
+.btn-payment:hover,.btn-change:hover{
+    opacity: 0.8;
+}
+.btn-order{
+    background-color: transparent;
+    color: hsl(224, 23%, 55%);
+    width: 400px;
+}
+.btn-order:hover {
+    color: hsl(223, 47%, 23%);
+}
+p{
+    font-size: 16px;
+    color:hsl(224, 23%, 55%) ;
+    line-height: 1.6;
+}
+.container .mmid{
+    margin: 30px auto;
+    background-color: hsl(225, 100%, 98%) ;
+    width: 90%;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container .mmid article{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container .mmid article img{
+    /* margi; */
+    margin-right: 10px;
+}
+.container .desc
+{
+    padding: 0 30px;
+}
+img{
+    max-width: 100%;
+}
+.container{
+    background-color: #fff;
+    margin: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+.container img.hero{    
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+.bg_image{
+    background:url('./images/pattern-background-mobile.svg')
+    no-repeat center/cover;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.hero-image{
+    margin: 0;
+    padding: 0;
+}
+.container h1{
+    color: hsl(223, 47%, 23%);
+    margin: 10px auto;
+}
+.container .buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+@media(min-width: 768px)
+{
+    .bg_image{
+        background:url('./images/pattern-background-desktop.svg') no-repeat center/cover;
+        height: 50vh;
+    
+    }
+    .container{
+        width: 500px;
+    }
+}
